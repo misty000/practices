@@ -1,4 +1,4 @@
-name := "orientdb-object-scala"
+name := "practices"
 
 organization := "org.misty"
 
