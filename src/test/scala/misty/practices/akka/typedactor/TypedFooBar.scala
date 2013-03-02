@@ -1,4 +1,4 @@
-package misty.practices.akka
+package misty.practices.akka.typedactor
 
 import concurrent.{Promise, Future}
 import akka.actor.{TypedProps, ActorSystem, TypedActor}

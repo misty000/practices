@@ -1,4 +1,4 @@
-package misty.practices.akka
+package misty.practices.akka.typedactor
 
 import akka.actor.TypedActor._
 import akka.actor.{ActorRef, SupervisorStrategy}
