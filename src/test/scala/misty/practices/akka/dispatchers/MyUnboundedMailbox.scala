@@ -1,5 +1,9 @@
 package misty.practices.akka.dispatchers
 
+import akka.actor.{ActorRef, ActorSystem}
+import akka.dispatch.{Envelope, MessageQueue, QueueBasedMessageQueue, UnboundedMessageQueueSemantics}
+import com.typesafe.config.Config
+import java.util.concurrent.ConcurrentLinkedQueue
 
 /**
  * Created with IntelliJ IDEA.
@@ -8,12 +12,6 @@ package misty.practices.akka.dispatchers
  * Time: 下午2:21
  */
 class MyUnboundedMailbox extends akka.dispatch.MailboxType {
-
-	import akka.actor.{ActorRef, ActorSystem}
-	import akka.dispatch.{Envelope, MessageQueue, QueueBasedMessageQueue, UnboundedMessageQueueSemantics}
-	import com.typesafe.config.Config
-	import java.util.concurrent.ConcurrentLinkedQueue
-
 	// This constructor signature must exist, it will be called by Akka
 	def this(settings: ActorSystem.Settings, config: Config) = this()
 
