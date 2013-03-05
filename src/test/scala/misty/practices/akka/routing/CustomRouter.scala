@@ -23,6 +23,7 @@ object CustomRouter extends App {
 			case m => println(m)
 		}
 	}).withRouter(VoteCountRouter()), "customRouter")
+	println(router.path)
 	implicit val timeout: Timeout = 5.seconds
 
 	router ! DemocratVote
