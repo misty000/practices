@@ -6,6 +6,8 @@ version := "0.0.1"
 
 scalaVersion := "2.10.0"
 
+resolvers += "Local repository" at "http://127.0.0.1:8081/nexus/content/repositories/central/"
+
 autoCompilerPlugins := true
 
 libraryDependencies <+= scalaVersion {
@@ -22,6 +24,8 @@ libraryDependencies ++= Seq(
 	"com.typesafe.akka" % "akka-actor_2.10" % "2.1.1",
 	"com.typesafe.akka" % "akka-remote_2.10" % "2.1.1",
 	"com.typesafe.akka" % "akka-dataflow_2.10" % "2.1.1",
+	"com.typesafe.akka" % "akka-agent_2.10" % "2.1.1",
+	"com.typesafe.akka" % "akka-transactor_2.10" % "2.1.1",
 	"com.typesafe.akka" % "akka-slf4j_2.10" % "2.1.1",
 	"ch.qos.logback" % "logback-classic" % "1.0.9",
 	"ch.qos.logback" % "logback-core" % "1.0.9",
