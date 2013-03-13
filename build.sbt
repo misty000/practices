@@ -6,6 +6,8 @@ version := "0.0.1"
 
 scalaVersion := "2.10.0"
 
+sbtVersion := "0.12.2"
+
 resolvers += "Local repository" at "http://127.0.0.1:8081/nexus/content/repositories/central/"
 
 libraryDependencies ++= Seq(
