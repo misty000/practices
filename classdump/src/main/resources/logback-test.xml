@@ -8,5 +8,5 @@
     <root level="DEBUG">
         <appender-ref ref="STDOUT"/>
     </root>
-    <logger name="scala.slick.compiler" level="INFO"/>
+    <logger name="scala.slick" level="DEBUG"/>
 </configuration>
