@@ -21,7 +21,7 @@ object MappedTables extends App {
 
 		def last = column[String]("last")
 
-		def * = id.? ~ first ~ last <>(User, User.unapply _)
+		def * = id.? ~ first ~ last <>(User.apply _, User.unapply _)
 	}
 
 	object A extends Table[(Int, Int)]("a") {
