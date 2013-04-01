@@ -11,7 +11,7 @@ import duration.DurationLong
  * Time: 下午4:36
  */
 object FutureSample extends App {
-	val f = future {
+	val f = Future {
 		1 + 2
 	}
 	f onSuccess {

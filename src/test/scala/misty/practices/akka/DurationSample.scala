@@ -3,6 +3,7 @@ package misty.practices.akka
 import concurrent.duration.{fromNow, DurationInt}
 import org.scalatest.FlatSpec
 import actors.threadpool.TimeUnit
+import scala.Predef._
 
 /**
  * Created with IntelliJ IDEA.

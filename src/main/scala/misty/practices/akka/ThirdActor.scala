@@ -1,7 +1,7 @@
 package misty.practices.akka
 
 import akka.actor.{ActorSystem, Props, Actor}
-import actors.threadpool.TimeUnit
+import java.util.concurrent.TimeUnit
 
 /**
  * Created with IntelliJ IDEA.

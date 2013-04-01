@@ -13,7 +13,7 @@ object ClassLoaderSample2 {
 	def main(args: Array[String]) {
 		val orig = new Hello
 		val cp = ClassPool.getDefault
-		val cc = cp.get("test.Hello")
+		val cc = cp.get("misty.practices.javassist.test.Hello")
 		val method = cc.getDeclaredMethod("say")
 		method.insertBefore( """{System.out.println("Hello.say();");}""")
 		cc.toClass(orig.getClass.getClassLoader, orig.getClass.getProtectionDomain)

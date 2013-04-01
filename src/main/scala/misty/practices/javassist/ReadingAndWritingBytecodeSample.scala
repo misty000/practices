@@ -14,8 +14,8 @@ object ReadingAndWritingBytecodeSample {
 		// define a new class
 		{
 			val pool = new ClassPool(true)
-			val cc = pool.get("test.Rectangle")
-			cc.setSuperclass(pool.get("test.Point"))
+			val cc = pool.get("misty.practices.javassist.test.Rectangle")
+			cc.setSuperclass(pool.get("misty.practices.javassist.test.Point"))
 			cc.writeFile()
 			// save .class file
 			// cc.writeFile()
@@ -92,30 +92,30 @@ object ReadingAndWritingBytecodeSample {
 
 		{
 			val pool = new ClassPool(true)
-			val cc = pool.get("test.Point")
+			val cc = pool.get("misty.practices.javassist.test.Point")
 			cc.setName("test.Pair")
 			println(cc.toClass)
 		}
 
 		{
 			val pool = new ClassPool(true)
-			val cc = pool.get("test.Point")
-			val cc1 = pool.get("test.Point")
+			val cc = pool.get("misty.practices.javassist.test.Point")
+			val cc1 = pool.get("misty.practices.javassist.test.Point")
 			println(cc eq cc1) // true
 
 			cc.setName("test.Pair")
 			val cc2 = pool.get("test.Pair")
 			println(cc eq cc2) // true
 
-			val cc3 = pool.get("test.Point")
+			val cc3 = pool.get("misty.practices.javassist.test.Point")
 			println(cc eq cc3) // false
 		}
 
 		{
 			val pool = new ClassPool(true)
-			val cc = pool.get("test.Point")
+			val cc = pool.get("misty.practices.javassist.test.Point")
 			cc.toClass
-			val cc2 = pool.getAndRename("test.Point", "test.Pair")
+			val cc2 = pool.getAndRename("misty.practices.javassist.test.Point", "test.Pair")
 			println(cc2.toClass)
 		}
 	}

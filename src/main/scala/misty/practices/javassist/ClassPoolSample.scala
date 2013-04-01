@@ -11,9 +11,9 @@ import javassist.ClassPool
 object ClassPoolSample {
 	def main(args: Array[String]) {
 		val pool = new ClassPool(true)
-		val cc = pool.get("test.Point")
+		val cc = pool.get("misty.practices.javassist.test.Point")
 		cc.toClass
-		val cc2 = pool.getAndRename("test.Point", "test.Pair")
+		val cc2 = pool.getAndRename("misty.practices.javassist.test.Point", "test.Pair")
 		println(cc2.toClass)
 	}
 }

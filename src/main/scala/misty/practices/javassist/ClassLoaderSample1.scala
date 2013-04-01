@@ -13,7 +13,7 @@ object ClassLoaderSample1 {
 	def main(args: Array[String]) {
 		{
 			val pool = new ClassPool(true)
-			val cc = pool.get("test.Hello")
+			val cc = pool.get("misty.practices.javassist.test.Hello")
 			val method = cc.getDeclaredMethod("say")
 			method.insertBefore( """{System.out.println("Hello.say();");}""")
 			cc.toClass

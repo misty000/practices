@@ -13,10 +13,10 @@ object UsingJavassistLoaderSample1 {
 		val pool = ClassPool.getDefault
 		val cl = new Loader(pool)
 
-		val ct = pool.get("test.Rectangle")
-		ct.setSuperclass(pool.get("test.Point"))
+		val ct = pool.get("misty.practices.javassist.test.Rectangle")
+		ct.setSuperclass(pool.get("misty.practices.javassist.test.Point"))
 
-		val c = cl.loadClass("test.Rectangle")
+		val c = cl.loadClass("misty.practices.javassist.test.Rectangle")
 		val rect = c.newInstance()
 		println(rect)
 		println(rect.getClass.getSuperclass)

@@ -1,4 +1,4 @@
-package test
+package misty.practices.javassist.test
 
 /**
  * Created with IntelliJ IDEA.

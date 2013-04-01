@@ -2,7 +2,7 @@ package misty.practices.akka
 
 import akka.actor.{Props, ActorSystem, Actor}
 import akka.event.Logging
-import actors.threadpool.TimeUnit
+import java.util.concurrent.TimeUnit
 
 /**
  * Created with IntelliJ IDEA.

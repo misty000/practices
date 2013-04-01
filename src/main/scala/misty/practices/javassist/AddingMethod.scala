@@ -14,7 +14,7 @@ object AddingMethod {
 
 		pool.importPackage("test")
 
-		val clsPoint = pool.get("test.Point")
+		val clsPoint = pool.get("misty.practices.javassist.test.Point")
 		val m = CtNewMethod.make(
 			"""
 			  |public void xmove(int dx) {Rectangle r = null;x += dx;}
